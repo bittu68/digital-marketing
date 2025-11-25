@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar + Build Section</title>
+</head>
+
+<body style="margin:0; font-family:Arial;">
+
+    <!-- ================= NAVBAR ================= -->
+    <div style="
+        width:100%; 
+        background:#0e1e42; 
+        padding:15px 0; 
+        display:flex; 
+        justify-content:space-between; 
+        align-items:center;
+        position:sticky;
+        top:0;
+        z-index:1000;
+    ">
+        <!-- Logo -->
+        <div style="color:white; font-size:22px; font-weight:bold; margin-left:40px;">
+            TechNova
+        </div>
+
+        <!-- Menu -->
+        <div style="margin-right:40px;">
+            <a href="#" style="color:white; margin:0 15px; text-decoration:none; font-size:16px;">Home</a>
+            <a href="#" style="color:white; margin:0 15px; text-decoration:none; font-size:16px;">Courses</a>
+            <a href="#" style="color:white; margin:0 15px; text-decoration:none; font-size:16px;">About</a>
+            <a href="#" style="color:white; margin:0 15px; text-decoration:none; font-size:16px;">Contact</a>
+        </div>
+    </div>
+
+    <!-- ================= BUILD SECTION ================= -->
+    <div style="
+        width:100%;
+        height:70vh;
+        background:url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1400&q=60');
+        background-size:cover;
+        background-position:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        color:white;
+    ">
+        <div>
+            <h1 style="font-size:45px; margin:0; text-shadow:0 0 8px black;">
+                Build Your IT Career
+            </h1>
+            <p style="font-size:20px; text-shadow:0 0 8px black;">
+                Learn IT Skills • Become Professional • Get Placed
+            </p>
+
+            <button style="
+                margin-top:20px;
+                padding:12px 25px;
+                background:#ff5722;
+                color:white;
+                border:none;
+                border-radius:5px;
+                font-size:18px;
+                cursor:pointer;
+            ">
+                Enroll Now
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
+
+     <section class="hero">
+        
+        <div class="hero-background">
+            <div class="gradient-bg"></div>
+            <div class="particles-container" id="particles"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+                <div class="shape shape-6"></div>
+            </div>
+        </div>
+
+     
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Create Amazing</span>
+                    <span class="title-line">Digital Experiences</span>
+                </h1>
+                <p class="hero-description">
+                    Transform your ideas into stunning digital realities with our cutting-edge 
+                    technology and innovative design solutions.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+            
+           
+            <div class="hero-visual">
+                <div class="central-orb" id="centralOrb">
+                    <div class="orb-core"></div>
+                    <div class="orb-ring ring-1"></div>
+                    <div class="orb-ring ring-2"></div>
+                    <div class="orb-ring ring-3"></div>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TechCadd Courses Section</title>
+
+<style>
+/* --------------------------
+   BASIC RESET + THEME
+--------------------------- */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background:#f4f6fa;
+  color:#111;
+}
+
+/* --------------------------
+   SECTION WRAPPER
+--------------------------- */
+.course-section{
+  padding:70px 20px;
+  text-align:center;
+}
+
+.course-section h3{
+  color:#0077ff;
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.course-section h1{
+  font-size:38px;
+  margin-bottom:50px;
+  font-weight:700;
+}
+
+/* --------------------------
+   COURSES GRID
+--------------------------- */
+.course-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:35px;
+  padding:0 10px;
+}
+
+/* --------------------------
+   COURSE CARD
+--------------------------- */
+.course-card{
+  background:#fff;
+  padding:20px;
+  border-radius:18px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  transition:0.3s;
+  opacity:0;                    /* hidden for animation */
+  transform:translateY(40px);   /* initial fade-from-bottom */
+}
+
+.course-card.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.course-card:hover{
+  transform: translateY(-8px) scale(1.03);
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.course-card img{
+  width:100%;
+  border-radius:16px;
+  margin-bottom:15px;
+}
+
+.course-card h2{
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.course-card p{
+  color:#555;
+  font-size:14px;
+  line-height:1.5;
+}
+
+/* --------------------------
+   RESPONSIVE
+--------------------------- */
+@media(max-width:600px){
+  .course-section h1{
+    font-size:30px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<!-- ==============================
+       COURSES SECTION
+=================================== -->
+<section class="course-section">
+  <h3>Our Courses</h3>
+  <h1>Career-Focused IT Training at TechCadd</h1>
+
+  <div class="course-grid">
+
+    <div class="course-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThmk6269uy-wi4R6trWZ1hTwzs-oYXVTMucg&s" alt="Data Analysis" />
+      <h2>Data Analysis</h2>
+      <p>Work with Excel, SQL & data visualization.</p>
+    </div>
+
+    <div class="course-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ08MKMPbeG4mkCPRTfOt6lunfy-U4KRgvTgg&s" alt="Digital Marketing" />
+      <h2>Digital Marketing</h2>
+      <p>SEO, social media & online ads in one course.</p>
+    </div>
+
+    <div class="course-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSQP_x9y2Q5RV0XbojJp7oowNIqaapAjT40A&s" alt="Data Science" />
+      <h2>Data Science</h2>
+      <p>Python, ML models & big data training.</p>
+    </div>
+
+    <div class="course-card">
+      <img src="https://www.shutterstock.com/image-illustration/cam-computeraided-manufacturing-industrial-technology-600nw-2554453041.jpg" alt="CAD CAM" />
+      <h2>CAD / CAM</h2>
+      <p>Design & manufacturing using CAD/CAM tools.</p>
+    </div>
+
+  
+
+  </div>
+</section>
+
+<!-- ==============================
+       JS FOR SCROLL ANIMATION
+=================================== -->
+<script>
+const cards = document.querySelectorAll(".course-card");
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+    }
+  });
+},{
+  threshold: 0.2
+});
+
+cards.forEach(card=>observer.observe(card));
+</script>
+
+
+<!-- form sec -->
+ <div class="login-box ">
+  <h2>Workshop</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="" required="">
+      <label>Name</label>
+    </div>
+    <div class="user-box">
+      <input type="email" name="" required="">
+      <label>Gmail</label>
+    </div>
+    <div class="user-box">
+      <input type="time" name="" required="">
+      <label>Time</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="" required="">
+      <label>Location</label>
+    </div>
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  </form>
+</div>
+
+
+</body>
+</html>
